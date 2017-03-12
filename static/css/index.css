@@ -1,0 +1,517 @@
+
+
+/* Light Switch
+==========================*/
+
+.light-switch {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 130px;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 22px;
+  margin-left: 22px;
+}
+
+.light-switch:hover {
+  border-top-color: #ccc;
+  background: #9A9A9A;
+  color: #ccc;
+}
+
+.light-switch:active {
+  border-top-color: #5aa64f;
+  background: #5aa64f;
+}
+
+.light-switch-panel:after,
+.light-switch-panel:before {
+  content: "\A";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #9A9A9A;
+  display: inline-block;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.off {
+  width: 200px;
+  height: 200px;
+  background-image: url('/static/image/light-off.jpg')!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 15px;
+
+}
+
+.on {
+  width: 200px;
+  height: 200px;
+  background-image: url('/static/image/light-on.jpg')!important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+#house {
+  height: 400px;
+  width: 800px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 20px auto 20px auto;
+}
+
+.light {
+  border: 1px solid #474747;
+  float: left;
+  height: 300px;
+  width: 250px;
+  display: inline-block;
+margin: 45px 60px 10px 60px;
+text-align:center;
+background-color: black;
+
+}
+
+.temperature {
+  border: 1px solid #474747;
+  float: right;
+  height: 300px;
+  width: 250px;
+  display:inline-block;
+    margin: 45px 60px 10px 45px;
+    text-align:center;
+/*    background-color: black;
+*/
+}
+
+
+.temp-box {
+  height: 190px;
+  width: 200px;
+  border: 5px solid #ccc;
+  margin: 0px;
+  padding: 5px;
+  display: block-inline;
+}
+
+
+
+.display .temp-input{
+  border: 3px solid #A4A4A4;
+  width: 200px;
+  height: 150px;
+  float: left;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #00A388;
+  opacity: 0.4;
+  border-radius: 25px;
+
+}
+
+
+.temp {
+   border: 1px solid #A4A4A4;
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  height: 80px;
+  width: 40px;
+  margin:55px 10px 10px 0px;
+  border-radius: 10px;
+}
+    input[type="number"] {
+   color: ;
+   width:100px;
+}
+
+
+/* UMA PETERSEN: WINDOW curtain EFFECT*/
+
+/*.shade {
+  height: 250px;
+  width: 230px;
+  background-image: url('/static/image/windowShade.jpg')!important;
+ background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+}*/
+
+.house-window-frame {
+  width: 204px;
+  height: 204px;
+  background: white;
+  left: 356px;
+  top: 254px;
+  border-radius: 2px;
+
+}
+.house-window {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #acf;
+  float: left;
+  margin: 15px 0 0 15px;
+  border-radius: 1px;
+  padding: 5px;
+  opacity: 0.5;
+}
+
+.house-window-frame  {
+  position:absolute;
+    top:50px;
+    left:25px;
+    z-index:-1;
+}
+
+
+/* CODE PEN CSS FIRE
+==========================*/
+
+ .fire {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  height: 20vw;
+  width: 20vw;
+}
+.fire .flames {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+.fire .flames .flame {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 0%;
+  height: 0%;
+  background-color: #FFDC01;
+  border-radius: 1vw;
+}
+.fire .flames .flame:nth-child(2n + 1) {
+  -webkit-animation: flameodd 1.5s ease-in infinite;
+          animation: flameodd 1.5s ease-in infinite;
+}
+.fire .flames .flame:nth-child(2n) {
+  -webkit-animation: flameeven 1.5s ease-in infinite;
+          animation: flameeven 1.5s ease-in infinite;
+}
+.fire .flames .flame:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.fire .flames .flame:nth-child(2) {
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+.fire .flames .flame:nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.fire .flames .flame:nth-child(4) {
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
+}
+.fire .logs {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 15%;
+}
+.fire .logs:before, .fire .logs:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(20deg);
+          transform: translate(-50%, -50%) rotate(20deg);
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+  background-color: #70392F;
+}
+.fire .logs:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-20deg);
+          transform: translate(-50%, -50%) rotate(-20deg);
+  background-color: #612E25;
+}
+
+@-webkit-keyframes flameodd {
+  0%, 100% {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    width: 100%;
+    height: 100%;
+  }
+  0% {
+    background-color: #FFDC01;
+    z-index: 1000000;
+  }
+  40% {
+    background-color: #FDAC01;
+    z-index: 1000000;
+  }
+  100% {
+    background-color: #F73B01;
+    z-index: -10;
+  }
+  0% {
+    right: 0%;
+    bottom: 0%;
+  }
+  25% {
+    right: 1%;
+    bottom: 2%;
+  }
+  100% {
+    right: 150%;
+    bottom: 170%;
+  }
+}
+
+@keyframes flameodd {
+  0%, 100% {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    width: 100%;
+    height: 100%;
+  }
+  0% {
+    background-color: #FFDC01;
+    z-index: 1000000;
+  }
+  40% {
+    background-color: #FDAC01;
+    z-index: 1000000;
+  }
+  100% {
+    background-color: #F73B01;
+    z-index: -10;
+  }
+  0% {
+    right: 0%;
+    bottom: 0%;
+  }
+  25% {
+    right: 1%;
+    bottom: 2%;
+  }
+  100% {
+    right: 150%;
+    bottom: 170%;
+  }
+}
+@-webkit-keyframes flameeven {
+  0%, 100% {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    width: 100%;
+    height: 100%;
+  }
+  0% {
+    background-color: #FFDC01;
+    z-index: 1000000;
+  }
+  40% {
+    background-color: #FDAC01;
+    z-index: 1000000;
+  }
+  100% {
+    background-color: #F73B01;
+    z-index: -10;
+  }
+  0% {
+    right: 0%;
+    bottom: 0%;
+  }
+  25% {
+    right: 2%;
+    bottom: 1%;
+  }
+  100% {
+    right: 170%;
+    bottom: 150%;
+  }
+}
+@keyframes flameeven {
+  0%, 100% {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    width: 100%;
+    height: 100%;
+  }
+  0% {
+    background-color: #FFDC01;
+    z-index: 1000000;
+  }
+  40% {
+    background-color: #FDAC01;
+    z-index: 1000000;
+  }
+  100% {
+    background-color: #F73B01;
+    z-index: -10;
+  }
+  0% {
+    right: 0%;
+    bottom: 0%;
+  }
+  25% {
+    right: 2%;
+    bottom: 1%;
+  }
+  100% {
+    right: 170%;
+    bottom: 150%;
+  }
+}
+
+
+/* CODE PEN CSS FAN
+==========================*/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ceiling-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  animation: spin 6ms linear infinite;
+}
+.ceiling-container:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  background: #444;
+  box-shadow: inset 0 0px 0px 8px #444444, inset 0 1px 5px 22px #383838;
+}
+
+.ceiling-fan {
+  display: block;
+  background: #ccc;
+  border-radius: 5px;
+  position: absolute;
+  box-shadow: inset 1px 1px 40px #555;
+}
+.ceiling-fan:after {
+  content: "";
+  position: absolute;
+  background: #666;
+  display: block;
+}
+.ceiling-fan.horizontal {
+  width: auto;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  transform: skewX(20deg);
+}
+.ceiling-fan.horizontal:after {
+  top: 25%;
+  width: 15px;
+  height: 50%;
+}
+.ceiling-fan.vertical {
+  width: 50px;
+  height: auto;
+  left: 50%;
+  margin-left: -25px;
+  transform: skewY(20deg);
+}
+.ceiling-fan.vertical:after {
+  height: 15px;
+  width: 50%;
+  margin-left: 25%;
+}
+.ceiling-fan.left {
+  left: 0;
+  right: 50%;
+  margin-right: 45px;
+  border-radius: 50% 15px 15px 50%;
+}
+.ceiling-fan.left:after {
+  left: 100%;
+}
+.ceiling-fan.right {
+  right: 0;
+  left: 50%;
+  margin-left: 45px;
+  border-radius: 15px 50% 50% 15px;
+}
+.ceiling-fan.right:after {
+  right: 100%;
+}
+.ceiling-fan.top {
+  top: 0;
+  bottom: 50%;
+  margin-bottom: 45px;
+  border-radius: 50% 50% 15px 15px;
+}
+.ceiling-fan.top:after {
+  top: 100%;
+}
+.ceiling-fan.bottom {
+  top: 50%;
+  bottom: 0;
+  margin-top: 45px;
+  border-radius: 15px 15px 50% 50%;
+}
+.ceiling-fan.bottom:after {
+  bottom: 100%;
+}
+
+
+
+/* OTHER CSS
+==========================*/
+
+

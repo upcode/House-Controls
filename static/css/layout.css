@@ -1,0 +1,83 @@
+
+
+header {
+	height:160px;
+/*	background-image: url('/static/image/bk1.jpg');
+*/}
+
+h1 {
+	text-indent: -9999px;
+	width:940px;
+	height: 130px;
+	margin: 0px;
+	color:black;
+}
+
+nav, footer {
+	clear: both;
+	color: #ffffff;
+	background-color:#aeaca8;
+	height:30px;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+}
+
+nav li {
+	display: inline;
+	margin-right: 40px;
+}
+
+nav li a {
+	color:#ffffff;
+}
+
+nav li a:hover, nav li a.current {
+	color:000000;
+}
+
+section {
+	width: 695px;
+}
+
+article {
+	clear: both;
+	overflow: auto;
+	width:100%;
+}
+a {
+	color: #de6581;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h2 {
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+
+h3 {
+		margin: 0px 0px 10px 0px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Droid Sans', verdana, sans-serif;
+}
+
+footer {
+	font-size: 80%;
+	padding: 7px 0px 0px 20px;
+}

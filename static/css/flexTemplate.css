@@ -1,0 +1,179 @@
+
+/* Page Color Set-up Erase After
+==========================*/
+
+nav {
+    border: 1px solid orange;
+}
+
+header {
+       border: 1px solid orange;
+}
+
+
+footer {
+    border: 1px solid orange;
+}
+
+ .rooms, .items {
+  border: 3px solid lightgreen;
+}
+
+.box, .item {
+  border: 2px dashed black;
+}
+
+.container {
+  border: 2px dashed blue;
+}
+
+.page-wrapper {
+    border: 5px dashed red;
+
+}
+
+/* FLEX CSS LAYOUT by Uma Petersen
+==========================*/
+/*Fonts*/
+/*font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Droid Sans', sans-serif;*/
+
+body  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 300px;
+  flex-direction: column column-reverse;
+}
+
+.page-wrapper, nav, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 950px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+nav li {
+  display: inline;
+/*  margin-right: 40px;
+*/}
+
+nav li a {
+  color:#ffffff;
+}
+
+nav li a:hover, nav li a.current {
+  color:000000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  min-height: auto;
+  width: 920px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1 margin: 10px 10px;
+  width: 925px;
+  height: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 300px;
+  border: 1px solid white;
+  order: 2
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+}
+
+.light-switch-panel {
+  order: 1;
+
+}
+
+.temp-control-panel {
+  order: 2;
+
+}
+
+.rooms {
+   order: 3
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+    height: 200px;
+  width: 300px;
+
+
+}
+
+.room1 {
+
+  order: 1;
+  align-self: center;
+    height: 200px;
+  width: 300px;
+}
+
+.room2 {
+  order: 2;
+  align-self: center;
+    height: 200px;
+  width: 300px;
+}
+
+.room3 {
+  order: 1;
+  align-self: center;
+}
+
+.room4 {
+  order: 2;
+  align-self: center;
+}
+
+div.arrow-up {
+  display: flex;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  /* left arrow slant */
+  border-right: 50px solid transparent;
+  /* right arrow slant */
+  border-bottom: 50px solid #2f2f2f;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+
+footer {
+  width:950px;
+}
