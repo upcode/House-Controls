@@ -27,18 +27,20 @@ $(document).ready(function() {
         }
     });
 
-    $('.temp-button').click(function(e) {
-
+    $('.temp-button').click(function(event) {
+        event.preventDefault();
         var inputValue = $("input").val();
         var temp = parseInt(inputValue);
+
         if (temp <= 60) {
-            $(fireDiv).appendTo('#fire');
-        } else if (temp <= 75) {
-            $('.shade').slideUp(1500);
-        } else if (temp >= 76) {
             $(fanDiv).appendTo('#fan');
+             $(fireDiv).hide('#fire');
+        } else if (temp === 65) {
+            $('.shade').slideUp(1500);
+        } else if (temp >= 70) {
+            $(fireDiv).appendTo('#fire');
             $('.shade').slideDown(1500);
-            $(currentTime).appendTo('.room2');
+            $(fanDiv).hide('#fan');
         } else {
             //update state here
 
