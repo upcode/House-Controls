@@ -7,8 +7,8 @@
 Constructed a jQuery application simulating house automation. Features includes turning on and off a light. A temperature control panel to regulate temperatue's of your home which also includes added features such as opening window, turning on a fan, or starting a fire. jQuery Smart Control4's Home is using Python, Flask and JavaScript. jQuery Smart Control4's Home renders control panel where user can interact with their home. .
 
 ## Project
-****jQuery Smart Control4's Home
-![Image of project](https://github.com/upcode/JavaScript-project/blob/master/static/img/timeline.jpg?raw=true)
+***jQuery Smart Control4's Home***
+![Image of Yaktocat](https://github.com/upcode/House-Controls/blob/master/static/image/house.jpg?raw=true)
 
 
 ### Installing
