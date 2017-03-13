@@ -64,6 +64,7 @@ I focused on functionality first and then getting the animation getting componen
 * 	Finish the mobile aspects of the layout.
 * 	Spend more time calculating the CSS height and width dimensions of the layout. 
 * 	Add more features to the temperature panel, stop button, and perhaps a sound effect or notification message. 
+* I would have liked to do some chimp/mocha and chai testing on the application.
 
 
 ## Project
